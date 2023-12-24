@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap');
+
+:root {
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #d8f3dc;
+  --txt-primary: #fff;
+  --txt-secondary: #081c15;
+  --txt-logo: #5e4608;
+}
+
+/* all element */
+body {
+  background-color: var(--bg-primary);
+  color: var(--txt-primary);
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+section {
+  padding-top: 60px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+/* recycle element */
+
+.btn-main {
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: var(--txt-secondary);
+  margin: 0 10px;
+}
+
+a.btn-contact {
+  background-color: var(--txt-primary);
+  color: var(--txt-secondary);
+  border-radius: 15px;
+  width: 80px;
+  height: 35px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--txt-primary);
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a.btn-contact:hover {
+  background-color: transparent;
+  border: 2px solid var(--txt-primary);
+  color: var(--txt-primary);
+  box-sizing: border-box;
+}
+
+.divider {
+  width: 80%;
+  height: 2px;
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+/* navbar */
+
+nav {
+  background-color: transparent;
+  backdrop-filter: blur(100px);
+}
+
+.navbar-brand {
+  padding: 0 0;
+  color: var(--txt-primary);
+}
+
+.navbar-brand h5 span {
+  color: var(--txt-logo);
+  font-weight: 700;
+  margin: 0 -3px;
+}
+
+.nav-link {
+  color: var(--txt-primary);
+  font-weight: 700;
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  color: var(--txt-primary);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  background: -webkit-linear-gradient(#d8f3dc, #081c15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bxs-dashboard {
+  font-size: 2.5rem;
+  color: var(--txt-primary);
+}
+
+.bxs-dashboard:active {
+  font-size: 2.5rem;
+  color: var(--txt-secondary);
+}
+
+/* hero */
+
+.hero-text .text-heading h1 {
+  font-weight: 800;
+}
+
+.hero-btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 80px;
+}
+
+.btn-download {
+  width: 120px;
+  height: 35px;
+}
+
+.btn-hire {
+  width: 100px;
+  height: 35px;
+}
+
+.hero-btn .btn-main:hover {
+  background-color: transparent;
+  border: 2px solid var(--txt-primary);
+  box-sizing: border-box;
+  color: var(--txt-primary);
+}
+
+/* about */
+
+.skill-text .icon ul li {
+  font-size: 48px;
+}
+
+.skill-text .icon ul .badge {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon ul .html {
+  background-color: #ff5733;
+}
+
+.icon ul .css {
+  background-color: #264de4;
+}
+.icon ul .bootstrap {
+  background-color: #7411f6;
+}
+.icon ul .figma {
+  background-color: #0acf83;
+}
+
+/* contact */
+
+.text-contact,
+.img-contact {
+  background-color: var(--txt-secondary);
+  margin: 0;
+  padding: 0;
+  min-height: 70vh;
+}
+
+.container .text-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.img-contact {
+  border-radius: 20px 0 0 20px;
+}
+.text-contact {
+  border-radius: 0 20px 20px 0;
+}
+
+.img-template {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.img-template img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -80px;
+}
+
+.box-form {
+  width: 80%;
+}
+
+.box-form .user-form {
+  position: relative;
+}
+
+.box-form .user-form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--txt-primary);
+  width: 100%;
+  font-size: 1rem;
+  color: var(--txt-primary);
+  outline: none;
+}
+
+.box-form .user-form label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease;
+  pointer-events: none;
+}
+
+.box-form .user-form input:valid ~ label,
+.box-form .user-form input:focus ~ label {
+  top: -20px;
+  left: 0;
+  font-size: 12px;
+}
+
+.user-form textarea {
+  background-color: transparent;
+  border: 2px solid var(--txt-primary);
+  outline: none;
+  color: var(--txt-primary);
+  width: 100%;
+}
+
+/* footer */
+footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  backdrop-filter: blur(90px);
+}
+
+footer .column-center {
+  display: flex;
+  justify-content: center;
+}
+
+footer ul {
+  gap: 10px;
+}
+
+/* responsive breakpoint */
+@media screen and (max-width: 768px) {
+  .switch {
+    order: 2;
+  }
+
+  .img-contact {
+    display: none;
+  }
+
+  .container .text-contact {
+    align-items: center;
+    padding: 0 15px;
+    background-image: linear-gradient(to bottom, rgba(152, 158, 189, 0.52), rgba(17, 53, 2, 0.73)), url('../img/pesawat-kertas.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  .text-contact .text-heading {
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .box-form {
+    width: 70%;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+  }
+
+  .box-form .user-form textarea {
+    width: 100%;
+  }
+}
